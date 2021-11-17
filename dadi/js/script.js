@@ -22,7 +22,10 @@ Il tuo numero estratto è: ${userNumber}
 `);
 
 // Estrazione numero pc
-
+let computerNumber = Math.floor(Math.random() * 6) + 1;
+alert(`
+Il numero estratto dal pc è: ${computerNumber}
+`);
 
 // Confonto i numeri
 
