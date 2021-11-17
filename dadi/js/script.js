@@ -27,7 +27,17 @@ alert(`
 Il numero estratto dal pc è: ${computerNumber}
 `);
 
-// Confonto i numeri
-
-
-// Output - Esito della partita
+// Output - Confonto i numeri e stampo l'esito della partita
+if (userNumber < computerNumber) {
+    alert(`
+    Hai perso! : (
+    `);
+} else if (userNumber > computerNumber){
+    alert(`
+    Hai Vinto! : )
+    `);
+} else {
+    alert(`
+    Pareggio!
+    `);
+}
