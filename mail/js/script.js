@@ -11,9 +11,25 @@ const mailList = ['matteo@gmail.com', 'marco@gmail.com', 'gianni@gmail.com', 'pi
 
 // Chiedo la mail - UserMail Request
 const userMail = prompt('Qual è la tua mail?');
-console.log(userMail);
+console.log('Email inserita: ' + userMail);
 
-// Controllo se la mail è nella lista
+// Analizzo la lista delle mail
+let mailFound = false;
 
+for (let i = 0; i < mailList.length; i++) {
+    const thisMail = mailList[i];
+    // console.log(thisMail);
+
+    // Controllo se la mail è nella lista
+    if (userMail === thisMail) {
+        mailFound = true;
+    }
+
+}
 
 // Stampo messaggio finale
+if (mailFound) {
+    alert('Ok! Puoi accedere!')
+} else {
+    alert('Accesso non consentito');
+}
