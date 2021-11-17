@@ -41,3 +41,7 @@ if (userNumber < computerNumber) {
     Pareggio!
     `);
 }
+
+alert(`
+Per rigiocare ricarica la pagina o premi "F5".
+`);
