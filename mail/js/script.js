@@ -21,7 +21,7 @@ for (let i = 0; i < mailList.length; i++) {
     // console.log(thisMail);
 
     // Controllo se la mail è nella lista
-    if (userMail === thisMail) {
+    if (userMail.toLowerCase() === thisMail) {
         mailFound = true;
     }
 
