@@ -1,0 +1,87 @@
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* COMMON */
+body{
+    background-color: rgb(41, 41, 41);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.app-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.game-container{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    /* test */
+    border: 3px solid blueviolet;
+}
+
+.game-container h1{
+    padding: 20px;
+    font-size: 30px;
+}
+
+.issues{
+    text-align: center;
+}
+
+.issues h2{
+    margin: 20px 0;
+    font-size: 20px;
+}
+
+.extracted-numbers{
+    margin: 100px 0;
+    display: flex;
+}
+
+.user-number,
+.pc-number{
+    margin: 30px 50px;
+    padding: 10px;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0.493);
+    vertical-align: middle;
+    position: relative;
+}
+
+.number{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    line-height: 40px;
+    text-align: center;
+    background-color: rgb(41, 41, 41);
+}
+
+.button-container .play-button{
+    display: inline-block;
+    padding: 15px 60px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+}
+
+#you-name,
+#pc-name{
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 20px;
+    font-weight: bold;
+}

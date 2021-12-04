@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js-dadi-bonus</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="app-container">
+        <div class="game-container">
+
+            <!-- Title -->
+            <h1>GIOCO DEI DADI</h1>
+
+            <!-- Game issues -->
+            <div class="issues">
+                <h2>Regole</h2>
+                <p>
+                    L'utente tira per primo i dadi, poi tira il pc.
+                    <br>
+                    Il numero più alto vince.
+                </p>
+            </div>
+
+            <!-- Extracted Numbers -->
+            <div class="extracted-numbers">
+
+                <!-- User Number -->
+                <div class="user-number">
+                    <p>Il tuo numero estratto è: <span class="number">[x]</span></p>
+                    <span id="you-name">YOU</span>
+                </div>
+
+                <!-- Pc Number -->
+                <div class="pc-number">
+                    <p>Il numero del pc estratto è: <span class="number">[x]</span></p>
+                    <span id="pc-name">PC</span>
+                </div>
+            </div>
+
+            <!-- Play Button -->
+            <div class="button-container">
+                <button class="play-button">Play</button>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
