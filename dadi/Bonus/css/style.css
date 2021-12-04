@@ -12,6 +12,13 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.btn{
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
 .app-container{
     width: 100%;
     height: 100vh;
@@ -21,9 +28,13 @@ body{
 
 .game-container{
     width: 40%;
+    margin: 50px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-radius: 30px;
+
+    background-color: rgba(255, 255, 255, 0.11);
 }
 
 .game-container h1{
@@ -79,13 +90,25 @@ body{
 }
 
 .button-container .play-button{
-    display: inline-block;
     padding: 10px 50px;
     border-radius: 50px;
-    border: none;
-    cursor: pointer;
     font-size: 25px;
-    font-weight: bold;
+}
+
+.button-container .clear-button{
+    margin: 0 10px;
+    padding: 5px 20px;
+    border-radius: 20px;
+    font-size: 18px;
+    background-color: rgb(136, 14, 14);
+    color: white;
+}
+
+.button-container .play-button.btn-disabled,
+.button-container .clear-button.btn-disabled{
+    color: black;
+    background-color: grey;
+    pointer-events: none;
 }
 
 #you-name,
@@ -96,4 +119,9 @@ body{
     transform: translateX(-50%);
     font-size: 18px;
     font-weight: bold;
+}
+
+.result-container h2{
+    margin: 100px 0;
+    font-size: 40px;
 }
