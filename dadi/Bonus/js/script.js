@@ -5,43 +5,52 @@
 
 
 
-// Introduzione al gioco
-// alert(`
-// GIOCO DEI DADI
+const playButton = document.querySelector('.play-button');
+playButton.addEventListener("click", game);
+console.log(playButton)
 
-// L'utente tira per primo i dadi, poi tira il pc.
-// Il numero più alto vince.
+const userNumberHTML = document.querySelector('.user-number');
+const pcNumberHTML = document.querySelector('.pc-number');
 
-// Clicca 'OK' per continuare
-// `);
+const userNumberContainer = document.querySelector('#userNumber');
+const pcNumberContainer = document.querySelector('#pcNumber');
 
-// // Estrazione numero utente
-// let userNumber = Math.floor(Math.random() * 6) + 1;
-// alert(`
-// Il tuo numero estratto è: ${userNumber}
-// `);
+// GAME
+function game() {
 
-// // Estrazione numero pc
-// let computerNumber = Math.floor(Math.random() * 6) + 1;
-// alert(`
-// Il numero estratto dal pc è: ${computerNumber}
-// `);
+    // Estrazione numero utente
+    let userNumber = Math.floor(Math.random() * 6) + 1;
+    userNumberHTML.classList.add('active')
+    userNumberContainer.innerHTML = `${userNumber}`
 
-// // Output - Confonto i numeri e stampo l'esito della partita
-// if (userNumber < computerNumber) {
-//     alert(`
-//     Hai perso! : (
-//     `);
-// } else if (userNumber > computerNumber){
-//     alert(`
-//     Hai Vinto! : )
-//     `);
-// } else {
-//     alert(`
-//     Pareggio!
-//     `);
-// }
+    // alert(`
+    // Il tuo numero estratto è: ${userNumber}
+    // `);
 
-// alert(`
-// Per rigiocare ricarica la pagina o premi "F5".
-// `);
+    // Estrazione numero pc
+    let computerNumber = Math.floor(Math.random() * 6) + 1;
+    pcNumberHTML.classList.add('active')
+    pcNumberContainer.innerHTML = `${computerNumber}`
+    // alert(`
+    // Il numero estratto dal pc è: ${computerNumber}
+    // `);
+
+    // Output - Confonto i numeri e stampo l'esito della partita
+    // if (userNumber < computerNumber) {
+    //     alert(`
+    //     Hai perso! : (
+    //     `);
+    // } else if (userNumber > computerNumber){
+    //     alert(`
+    //     Hai Vinto! : )
+    //     `);
+    // } else {
+    //     alert(`
+    //     Pareggio!
+    //     `);
+    // }
+
+    // alert(`
+    // Per rigiocare ricarica la pagina o premi "F5".
+    // `);
+}
